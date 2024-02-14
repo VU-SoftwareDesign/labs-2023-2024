@@ -16,76 +16,42 @@ public class Order {
         CREATED("Created"),
         OTW("On the way"),
         DELIVERED("Delivered");
-
-        private final String name;
-
-        Status(String name) {
-            this.name = name;
-        }
-
-        public String toString(){return this.name;}
-
     }
 
     private final UUID orderID;
-    private Order.Status status;
+    private Status status;
     private Customer customer;
-    private LocalDate orderDate;
+    private LocalDate createdDate;
     private LocalDate deliveryDate;
     private List<Product> products;
     private LocalDate dispatchedDate;
     private Payment payment;
 
-    public Order(Status status, LocalDate orderDate, LocalDate deliveryDate) {
+    public Order(LocalDate orderDate, LocalDate deliveryDate) {
         this.orderID = UUID.randomUUID();
-        this.status = status;
+        this.status = Status.CREATED;
         this.orderDate = orderDate;
-        this.deliveryDate = deliveryDate;
-     
-    }
-
-    public Order(Order order) {
-        this.orderID = order.getOrderID();
-        this.status = order.getStatus();
-        this.orderDate = order.getOrderDate();
-        this.deliveryDate = order.getDeliveryDate();
-        this.payment = payment.getPayment();
-        this.products = order.getProducts();
-        this.dispatchedDate = order.getDispatchedDate();
     }
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-    public void makeRecieipt(UUID orderID, Payment payment ) {
+
+    public void makeReceipt() {
         System.out.println("This is the receipt for order");
     }
 
-    public void addToOrder(List<Product> orderedProducts) {
-        this.products = new ArrayList<>(orderedProducts);
+    public void addToOrder(List<Product> products) {
+        this.products.addAll(products);
     }
 
-    public UUID getOrderID() {
-        return this.orderID;
-    }
-
-    public Order.Status getStatus() {
+    public Status getStatus() {
         return this.status;
     }
 
-    public LocalDate getOrderDate() {
-        return this.orderDate;
-    }
+    public Status updateStatus() {}
 
-    public LocalDate getDeliveryDate() {
-        return this.deliveryDate;
-    }
+    public void archiveOrder() {}
 
-    public List<Product> getProducts() {
-        return products;
-    }
-
-    public LocalDate getDispatchedDate() {
-        return dispatchedDate;
-    }
+    public boolean finaliseOrder(String type) {}
 }

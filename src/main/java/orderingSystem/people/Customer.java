@@ -10,14 +10,17 @@ public class Customer {
     private String name;
     private String address;
 
-    public Customer(String name, String address) {
+    public Customer() {
         this.customerID = UUID.randomUUID();
+    }
+
+    public void changeDetails(String name, String address){
         this.name = name;
         this.address = address;
     }
 
-    public void changeAdress(String adress){
+    public void addDetails(String name, String address) {
+        this.name = name;
         this.address = address;
     }
-
 }

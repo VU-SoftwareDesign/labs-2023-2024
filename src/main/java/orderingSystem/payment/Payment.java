@@ -1,24 +1,21 @@
 package orderingSystem.payment;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.time.LocalDate;
 import java.util.Optional;
 import java.util.UUID;
 
 public abstract class Payment {
- 
-    @Getter @Setter
+
     private UUID paymentID;
+    private float totalAmount;
 
-
-    public Payment() {
+    public Payment(float orderPrice) {
         this.paymentID = UUID.randomUUID();
-       
+        this.totalAmount = orderPrice;
     }
 
-    public void makePayment(){
+    public void makePayment(float amount) {
+        this.totalAmount -= amount;
         System.out.println("The payment is forwarded to payment system");
     }
 
