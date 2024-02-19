@@ -1,4 +1,4 @@
-package orderingSystem.payment;
+package main.java.orderingSystem.payment;
 
 import java.time.LocalDate;
 import java.util.Optional;
@@ -8,11 +8,6 @@ public abstract class Payment {
 
     private UUID paymentID;
     private float totalAmount;
-
-    public Payment(float orderPrice) {
-        this.paymentID = UUID.randomUUID();
-        this.totalAmount = orderPrice;
-    }
 
     public void makePayment(float amount) {
         this.totalAmount -= amount;

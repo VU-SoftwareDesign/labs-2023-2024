@@ -1,8 +1,8 @@
-package orderingSystem.orders;
+package main.java.orderingSystem.orders;
 
-import orderingSystem.people.Customer;
-import orderingSystem.payment.Payment;
-import orderingSystem.product.Product;
+import main.java.orderingSystem.people.Customer;
+import main.java.orderingSystem.payment.Payment;
+import main.java.orderingSystem.product.Product;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,9 +13,9 @@ import java.util.UUID;
 public class Order {
 
     public enum Status {
-        CREATED("Created"),
-        OTW("On the way"),
-        DELIVERED("Delivered");
+        CREATED,
+        OTW,
+        DELIVERED;
     }
 
     private final UUID orderID;
@@ -27,10 +27,10 @@ public class Order {
     private LocalDate dispatchedDate;
     private Payment payment;
 
-    public Order(LocalDate orderDate, LocalDate deliveryDate) {
+    public Order() {
         this.orderID = UUID.randomUUID();
         this.status = Status.CREATED;
-        this.orderDate = orderDate;
+        this.createdDate = LocalDate.now();
     }
 
     public void setCustomer(Customer customer) {
@@ -45,13 +45,28 @@ public class Order {
         this.products.addAll(products);
     }
 
+    public void addProduct(Product product, int amount) {
+        this.products.add(product);
+    }
+
     public Status getStatus() {
         return this.status;
     }
 
-    public Status updateStatus() {}
+    public void updateStatus(Status status) {
+        this.status = status;
+    }
 
     public void archiveOrder() {}
 
-    public boolean finaliseOrder(String type) {}
+    public boolean finaliseOrder(String type) {
+        updateStatus(Status.OTW);
+        dispatchedDate = LocalDate.now();
+        return true;
+    }
+
+    public void markedDelivered() {
+        updateStatus(Status.DELIVERED);
+        this.deliveryDate = LocalDate.now();
+    }
 }

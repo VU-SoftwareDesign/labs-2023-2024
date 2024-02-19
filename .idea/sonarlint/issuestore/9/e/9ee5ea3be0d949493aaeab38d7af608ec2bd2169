@@ -1,0 +1,15 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨âŞ¾ÿÿÿÿÿ8ÔÑÍ¹Ú1
+
+java:S4144"]Update this method so that its implementation is not identical to "changeDetails" on line 17.(Ùäüÿÿÿÿ8ÛÑÍ¹Ú1
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8ãÑÍ¹Ú1
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ãÑÍ¹Ú1
+P
+java:S1068	".Remove this unused "customerID" private field.(“‰ˆ‘ûÿÿÿÿ8ãÑÍ¹Ú1
+E
+java:S1068
+"(Remove this unused "name" private field.(Ë¥¼8äÑÍ¹Ú1
+M
+java:S1068"+Remove this unused "address" private field.(÷§ùÿÿÿÿ8äÑÍ¹Ú1

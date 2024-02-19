@@ -1,4 +1,4 @@
-package orderingSystem.people;
+package main.java.orderingSystem.people;
 
 import java.time.LocalDate;
 import java.util.Optional;
