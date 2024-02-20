@@ -16,6 +16,13 @@ public class Product {
         this.productID = UUID.randomUUID();
     }
 
+    public Product(Product product) {
+        this.productID = product.productID;
+        this.productName = product.productName;
+        this.price = product.price;
+        this.amountInStock = product.amountInStock;
+    }
+
     public void autoRestock(int n) {
         if (!inStock()) this.amountInStock += n;
     }
@@ -24,7 +31,11 @@ public class Product {
         return this.amountInStock >= 5;
     }
 
-    public void discontinued() {
-        // this = null;
+    public int getAmountInStock() {
+        return amountInStock;
+    }
+
+    public void setAmountInStock(int amount) {
+        this.amountInStock = amount;
     }
 }

@@ -1,4 +1,4 @@
-package deliverySystem;
+package main.java.orderingSystem;
 
 public class Main {
     public static void main(String[] args) {

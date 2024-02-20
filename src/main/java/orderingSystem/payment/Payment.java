@@ -1,7 +1,5 @@
 package main.java.orderingSystem.payment;
 
-import java.time.LocalDate;
-import java.util.Optional;
 import java.util.UUID;
 
 public abstract class Payment {

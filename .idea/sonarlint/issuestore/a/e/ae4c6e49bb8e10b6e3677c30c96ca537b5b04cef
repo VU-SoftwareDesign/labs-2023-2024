@@ -1,9 +1,2 @@
 
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ω¬=8«ωά1
-]	java:S125"<This block of commented-out lines of code should be removed.(―Χ΅μόÿÿÿÿ8³ωά1
-J
-java:S1068"-Remove this unused "productID" private field.(Òκ¤8³ωά1
-L
-java:S1068"/Remove this unused "productName" private field.(…£ί8΄ωά1
-F
-java:S1068	")Remove this unused "price" private field.(χΊωΖ8΄ωά1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ω¬=8κ³ά1

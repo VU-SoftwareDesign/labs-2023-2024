@@ -1,12 +1,7 @@
 
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áÌøç8àëž½Ú1
-L	java:S106"+Replace this use of System.out by a logger.(’Ð½¶úÿÿÿÿ8íëž½Ú1
-R
-java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ8îëž½Ú1
-Q
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ8îëž½Ú1
+L	java:S106"+Replace this use of System.out by a logger.(’Ð½¶úÿÿÿÿ8íëž½Ú1
 J
-java:S1068	"-Remove this unused "paymentID" private field.(Ê½ßÁ8ïëž½Ú1
+java:S1068"-Remove this unused "paymentID" private field.(Ê½ßÁ8ïëž½Ú1
 Q
-java:S1068
-"/Remove this unused "totalAmount" private field.(¨¨¡µûÿÿÿÿ8ïëž½Ú1
+java:S1068"/Remove this unused "totalAmount" private field.(¨¨¡µûÿÿÿÿ8ïëž½Ú1

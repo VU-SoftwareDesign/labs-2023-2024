@@ -1,25 +1,19 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…²Ύ©8¦ες™ά1
-
-java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚Εί8ªες™ά1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…²Ύ©8‘ί«³ά1
 y
-java:S1450"WRemove the "customer" field and declare it as a local variable in the relevant methods.(νήΫώÿÿÿÿ8«ες™ά1
+java:S1450"WRemove the "customer" field and declare it as a local variable in the relevant methods.(νήΫώÿÿÿÿ8•ί«³ά1
 x
-java:S1450"[Remove the "deliveryDate" field and declare it as a local variable in the relevant methods.(®‰ύΝ8«ες™ά1
+java:S1450"[Remove the "deliveryDate" field and declare it as a local variable in the relevant methods.(®‰ύΝ8•ί«³ά1
 z
-java:S1450"]Remove the "dispatchedDate" field and declare it as a local variable in the relevant methods.(³Ω‚§8«ες™ά1
-G	java:S106)"+Replace this use of System.out by a logger.(²΅ΝΊ8­ες™ά1
-J
-java:S11720"-Remove this unused method parameter "amount".(Ό‡γλ8®ες™ά1
+java:S1450"]Remove the "dispatchedDate" field and declare it as a local variable in the relevant methods.(³Ω‚§8•ί«³ά1
+G	java:S106("+Replace this use of System.out by a logger.(²΅ΝΊ8—ί«³ά1
 M
-java:S1172>"+Remove this unused method parameter "type".(…‡„ϋÿÿÿÿ8―ες™ά1
-M
-java:S1068"+Remove this unused "orderID" private field.(λ—όÿÿÿÿ8°ες™ά1
+java:S1068"+Remove this unused "orderID" private field.(λ—όÿÿÿÿ8£ί«³ά1
 N
-java:S1068",Remove this unused "customer" private field.(νήΫώÿÿÿÿ8°ες™ά1
+java:S1068",Remove this unused "customer" private field.(νήΫώÿÿÿÿ8£ί«³ά1
 Q
-java:S1068"/Remove this unused "createdDate" private field.(ξ‚©ηϊÿÿÿÿ8°ες™ά1
+java:S1068"/Remove this unused "createdDate" private field.(ξ‚©ηϊÿÿÿÿ8£ί«³ά1
 M
-java:S1068"0Remove this unused "deliveryDate" private field.(®‰ύΝ8°ες™ά1
+java:S1068"0Remove this unused "deliveryDate" private field.(®‰ύΝ8£ί«³ά1
 O
-java:S1068"2Remove this unused "dispatchedDate" private field.(³Ω‚§8°ες™ά1
+java:S1068"2Remove this unused "dispatchedDate" private field.(³Ω‚§8£ί«³ά1

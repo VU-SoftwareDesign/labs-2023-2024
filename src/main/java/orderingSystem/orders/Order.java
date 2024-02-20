@@ -7,7 +7,6 @@ import main.java.orderingSystem.product.Product;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 public class Order {
@@ -45,8 +44,15 @@ public class Order {
         this.products.addAll(products);
     }
 
-    public void addProduct(Product product, int amount) {
+    public void addProduct(Product product) {
         this.products.add(product);
+        product.setAmountInStock(product.getAmountInStock() - 1);
+    }
+
+    public List<Product> getProducts() {
+        List<Product> returnable = new ArrayList<>();
+        this.products.forEach(product -> returnable.add(new Product(product)));
+        return returnable;
     }
 
     public Status getStatus() {
@@ -57,11 +63,12 @@ public class Order {
         this.status = status;
     }
 
-    public void archiveOrder() {}
-
-    public boolean finaliseOrder(String type) {
+    public boolean finaliseOrder() {
+        // UI input for cash or card and amount
+        float amount = 0; // would be the input
         updateStatus(Status.OTW);
         dispatchedDate = LocalDate.now();
+        payment.makePayment(amount);
         return true;
     }
 

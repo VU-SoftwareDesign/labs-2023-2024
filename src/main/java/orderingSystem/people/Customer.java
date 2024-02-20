@@ -1,7 +1,5 @@
 package main.java.orderingSystem.people;
 
-import java.time.LocalDate;
-import java.util.Optional;
 import java.util.UUID;
 
 public class Customer {
