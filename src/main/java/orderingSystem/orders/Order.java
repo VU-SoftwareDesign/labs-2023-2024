@@ -82,4 +82,13 @@ public class Order {
         updateStatus(Status.DELIVERED);
         this.deliveryDate = LocalDate.now();
     }
+
+    public float calculatePrice() {
+        float price = 0;
+        for (Product product : products) {
+            price += product.getPrice();
+        }
+
+        return price;
+    }
 }

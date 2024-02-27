@@ -16,4 +16,9 @@ public class Card extends Payment {
         this. number = number;
         this.expiryDate = expiryDate;
     }
+
+    @Override
+    public float makePayment(float amount) {
+        return amount;
+    }
 }

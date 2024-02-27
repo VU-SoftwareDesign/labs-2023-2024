@@ -7,11 +7,7 @@ public abstract class Payment {
     private UUID paymentID;
     private float totalAmount;
 
-    public void makePayment(float amount) {
-        this.totalAmount -= amount;
-        System.out.println("The payment is forwarded to payment system");
-    }
-
+    abstract public float makePayment(float amount);
     public Payment getPayment() {
         return this;
     }
