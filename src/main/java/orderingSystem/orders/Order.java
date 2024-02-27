@@ -41,7 +41,13 @@ public class Order {
     }
 
     public void addToOrder(List<Product> products) {
-        this.products.addAll(products);
+        for (Product product : products) {
+            if (product.inStock()) {
+                addProduct(product);
+            } else {
+                System.out.println("OUT OF STOCK!");
+            }
+        }
     }
 
     public void addProduct(Product product) {
