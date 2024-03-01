@@ -1,4 +1,4 @@
-package orderingSystem.product;
+package main.java.orderingSystem.product;
 
 import java.util.UUID;
 
@@ -16,11 +16,26 @@ public class Product {
         this.productID = UUID.randomUUID();
     }
 
-    public void autoRestock(Integer amountInStock) {
-        if (inStock() == false) System.out.println("Request to provider for restocking");
+    public Product(Product product) {
+        this.productID = product.productID;
+        this.productName = product.productName;
+        this.price = product.price;
+        this.amountInStock = product.amountInStock;
+    }
+
+    public void autoRestock(int n) {
+        if (!inStock()) this.amountInStock += n;
     }
 
     public boolean inStock() {
-        return this.amountInStock > 0;
+        return this.amountInStock >= 5;
+    }
+
+    public int getAmountInStock() {
+        return amountInStock;
+    }
+
+    public void setAmountInStock(int amount) {
+        this.amountInStock = amount;
     }
 }
