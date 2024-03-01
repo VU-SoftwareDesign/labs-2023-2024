@@ -1,4 +1,4 @@
-package main.java.orderingSystem;
+package designPatterns;
 import java.util.HashMap;
 import java.util.Map;
 

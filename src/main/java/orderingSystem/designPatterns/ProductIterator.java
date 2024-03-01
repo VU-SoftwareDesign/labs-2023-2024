@@ -1,4 +1,4 @@
-package main.java.orderingSystem;
+package designPatterns;
 
 import main.java.orderingSystem.product.Product;
 
