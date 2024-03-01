@@ -41,7 +41,13 @@ public class Order {
     }
 
     public void addToOrder(List<Product> products) {
-        this.products.addAll(products);
+        for (Product product : products) {
+            if (product.inStock()) {
+                addProduct(product);
+            } else {
+                System.out.println("OUT OF STOCK!");
+            }
+        }
     }
 
     public void addProduct(Product product) {
@@ -75,5 +81,14 @@ public class Order {
     public void markedDelivered() {
         updateStatus(Status.DELIVERED);
         this.deliveryDate = LocalDate.now();
+    }
+
+    public float calculatePrice() {
+        float price = 0;
+        for (Product product : products) {
+            price += product.getPrice();
+        }
+
+        return price;
     }
 }

@@ -1,4 +1,2 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áÌøç
-E
-java:S1068"/Remove this unused "amountGiven" private field.(èô­ß
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áÌøç8¼—ÜÓŞ1

@@ -1,19 +1,20 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…²¾©8‘ß«³Ü1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…²¾©8§¡ÓŞ1
 y
-java:S1450"WRemove the "customer" field and declare it as a local variable in the relevant methods.(íŸŞÛşÿÿÿÿ8•ß«³Ü1
+java:S1450"WRemove the "customer" field and declare it as a local variable in the relevant methods.(íŸŞÛşÿÿÿÿ8¡§¡ÓŞ1
 x
-java:S1450"[Remove the "deliveryDate" field and declare it as a local variable in the relevant methods.(®‰ıÍ8•ß«³Ü1
+java:S1450"[Remove the "deliveryDate" field and declare it as a local variable in the relevant methods.(®‰ıÍ8¡§¡ÓŞ1
 z
-java:S1450"]Remove the "dispatchedDate" field and declare it as a local variable in the relevant methods.(³Ù‚§8•ß«³Ü1
-G	java:S106("+Replace this use of System.out by a logger.(²¡Íº8—ß«³Ü1
+java:S1450"]Remove the "dispatchedDate" field and declare it as a local variable in the relevant methods.(³Ù‚§8¡§¡ÓŞ1
+G	java:S106("+Replace this use of System.out by a logger.(²¡Íº8¤§¡ÓŞ1
+L	java:S1060"+Replace this use of System.out by a logger.(Å¾Ìşüÿÿÿÿ8¤§¡ÓŞ1
 M
-java:S1068"+Remove this unused "orderID" private field.(ë—˜üÿÿÿÿ8£ß«³Ü1
+java:S1068"+Remove this unused "orderID" private field.(ë—˜üÿÿÿÿ8¨§¡ÓŞ1
 N
-java:S1068",Remove this unused "customer" private field.(íŸŞÛşÿÿÿÿ8£ß«³Ü1
+java:S1068",Remove this unused "customer" private field.(íŸŞÛşÿÿÿÿ8¨§¡ÓŞ1
 Q
-java:S1068"/Remove this unused "createdDate" private field.(î‚©çúÿÿÿÿ8£ß«³Ü1
+java:S1068"/Remove this unused "createdDate" private field.(î‚©çúÿÿÿÿ8¨§¡ÓŞ1
 M
-java:S1068"0Remove this unused "deliveryDate" private field.(®‰ıÍ8£ß«³Ü1
+java:S1068"0Remove this unused "deliveryDate" private field.(®‰ıÍ8¨§¡ÓŞ1
 O
-java:S1068"2Remove this unused "dispatchedDate" private field.(³Ù‚§8£ß«³Ü1
+java:S1068"2Remove this unused "dispatchedDate" private field.(³Ù‚§8¨§¡ÓŞ1

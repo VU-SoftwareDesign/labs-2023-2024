@@ -38,4 +38,6 @@ public class Product {
     public void setAmountInStock(int amount) {
         this.amountInStock = amount;
     }
+
+    public float getPrice() { return this.price; }
 }
