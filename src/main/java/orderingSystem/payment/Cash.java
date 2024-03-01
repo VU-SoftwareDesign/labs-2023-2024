@@ -1,10 +1,13 @@
 package main.java.orderingSystem.payment;
 
-public class Cash extends Payment{
+import java.util.Objects;
+
+public class Cash {
     private float amountGiven;
 
-    @Override
-    public float makePayment(float amount) {
-        return amountGiven - amount;
+    public float makePayment(float amount, String type) {
+         if (Objects.equals(type, "Cash")) {
+             return amountGiven - amount;
+         } else return 0;
     }
 }
