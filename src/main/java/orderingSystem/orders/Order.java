@@ -91,4 +91,9 @@ public class Order {
 
         return price;
     }
+
+    public UUID getOrderID(){
+        return orderID;
+    }
+
 }
