@@ -8,23 +8,22 @@ import java.util.UUID;
 
 public class OrderFactory {
 
-    private static OrderFactory instance;
     private Map<UUID, Order> orderCache;
 
     private OrderFactory() {
         orderCache = new HashMap<>();
     }
 
-    public static OrderFactory getInstance() {
-        if (instance == null) {
-            instance = new OrderFactory();
-        }
-        return instance;
-    }
-
     public Order createOrder() {
+        for (Order order : orderCache.values()) {
+            if (order != null) {
+                return order; 
+            }
+        }
+        
         Order order = new Order();
         orderCache.put(order.getOrderID(), order);
         return order;
     }
 }
+
