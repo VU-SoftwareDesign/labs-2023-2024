@@ -15,7 +15,7 @@ public class OrderFactory {
         orderCache = new HashMap<>();
     }
 
-    public static synchronized OrderFactory getInstance() {
+    public static OrderFactory getInstance() {
         if (instance == null) {
             instance = new OrderFactory();
         }
@@ -28,6 +28,3 @@ public class OrderFactory {
         return order;
     }
 }
-
-
-
